@@ -22,14 +22,13 @@ class FreeAndKindProgram{
      */
     private function loadFiles()
     {
+        // インストール時実行ファイル
+        include 'elements/controllers/class-fak-install.php';
         if(is_admin() )
         {
-            // インストール時実行ファイル
-            // include 'elements/views/class-fak-install.php'
             // プラグインのビューの読み込み
             include 'elements/views/testMenuPage.php';
             include 'elements/views/testCreatePage.php';
-            
         }
     }
     /**
@@ -47,17 +46,6 @@ class FreeAndKindProgram{
     {
         global $submenu;
         unset($submenu["fak_program"][0]);
-    }
-    /**
-     * サブメニューのフォーム作成
-     */
-    function testMenuSub()
-    {
-        require_once 'elements/views/testMenuPage.php';
-    }
-    function testCreateSub()
-    {
-        require_once 'elements/views/testCreatePage.php';
     }
 }
 ?>

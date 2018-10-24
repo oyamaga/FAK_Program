@@ -6,9 +6,7 @@
  * Author: oyama
  */
 
-/**
- * クラスファイルの読み込み、インスタンス化
- */
+// クラスファイル
 require_once 'class-free-and-kind-program.php';
 new FreeAndKindProgram;
 ?>
